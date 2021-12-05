@@ -16,21 +16,23 @@
 *     responses:
 *       '200':
 *         description: A successful response indicating the server was able to provide information about the football player
-*         schema:
-*           type: object
-*           properties:
-*             id:
-*               type: integer
-*               description: A unique ID assigned to each player
-*             wins:
-*               type: integer
-*               description: The number of won games the player was in
-*             losses:
-*               type: integer
-*               description: The number of lost games the player was in
-*             points_scored:
-*               type: integer
-*               description: The total number of goals scored by the player
+*         content:
+*           application/json:
+*             schema:
+*               type: object
+*               properties:
+*                 id:
+*                   type: integer
+*                   description: A unique ID assigned to each player
+*                 wins:
+*                   type: integer
+*                   description: The number of won games the player was in
+*                 losses:
+*                   type: integer
+*                   description: The number of lost games the player was in
+*                 points_scored:
+*                   type: integer
+*                   description: The total number of goals scored by the player
 *
 *
 * /api/v1/stats:
