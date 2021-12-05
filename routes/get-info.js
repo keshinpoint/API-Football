@@ -5,6 +5,8 @@
 *   get:
 *     summary: Gets information about a specific football player
 *     description: Gets information about a specific football player
+*     tags:
+*       - Football player
 *     parameters:
 *       - in: path
 *         name: playerID
@@ -33,8 +35,10 @@
 *
 * /api/v1/stats:
 *   post:
-*     summary: Gets information about a specific football player
-*     description: Gets information about a specific football player
+*     summary: Creates new information about a specific football player
+*     tags:
+*       - Football player
+*     description: Creates a new football player in the database
 *     consumes:
 *       - application/json
 *     parameters:
